@@ -285,15 +285,13 @@
   .btn:nth-child(2):before {
     background: var(--hover-color);
   }
-
   .social-icons {
     margin-top: 8rem;
     display: flex;
     justify-content: space-between;
-    width: 220px;
+    width: 280px;
     height: 40px;
-  }
-
+}
   .social-icons a {
     display: inline-flex;
     width: 50px;
