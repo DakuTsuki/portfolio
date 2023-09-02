@@ -72,7 +72,7 @@
                 <a href="#"><i class="fa-brands fa-instagram"></i></a>
                 <a href="https://www.linkedin.com/in/demola-adebayo-7a0466248/"><i
                         class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://github.com/DakuTsuki"><i class="fa-brands fa-github"></i></a>
+                <a href="https://github.com/DakuTsuki"><i class="fa-brands fa-github"></i></a>
             </div>
         </div>
         <div class="home-image scroll-scale">
@@ -115,6 +115,7 @@
                     </path>
                 </svg>
             </div>
+        </div>
     </section>
     <!-- about sectionnnnnnnnnnnnnnnnnnn........................ -->
 
@@ -133,7 +134,7 @@
                 <span>200+</span>
                 <p>Happy Cionts</p>
             </div>
-            
+
         </div>
 
         <div class="about-content scroll-scale">
@@ -403,7 +404,7 @@
             <input type="number" name="number" id="number" placeholder="Phone Number">
             <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
             <div class="btn-box formBtn">
-                <button type="submit" class="btn" >Send Message</button>
+                <button type="submit" class="btn">Send Message</button>
             </div>
         </form>
     </section>
@@ -413,37 +414,36 @@
         <p class="scroll-scale">Copyright &copy; 2023 by ParsCoder || All Right Reserved.</p>
         <a href="#home">&UpArrow;</a>
     </footer>
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-</script>
-<script type="text/javascript">
-    (function() {
-        emailjs.init("U-3-KkCqa4L_ieNuJ");
-    })();
-    
-</script>
-<script type="text/javascript">
-    document.getElementById("contact-form").addEventListener("submit", function(event) {
-        event.preventDefault(); // Prevent the default form submission
-        
-        // Gather form data
-        var formData = {
-            email: document.getElementsByName("email")[0].value,
-            subject: document.getElementsByName("number")[0].value,
-            subject: document.getElementsByName("address")[0].value,
-            subject: document.getElementsByName("name")[0].value,
-            message: document.getElementsByName("message")[0].value
-        };
-        
-        // Send the email using EmailJS
-        emailjs.send("service_eecr4y4", "template_kc9ddc7", formData)
-            .then(function(response) {
-                console.log("Email sent successfully:", response);
-            }, function(error) {
-                console.error("Email could not be sent:", error);
-            });
-    });
-</script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("U-3-KkCqa4L_ieNuJ");
+        })();
+
+    </script>
+    <script type="text/javascript">
+        document.getElementById("contact-form").addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Gather form data
+            var formData = {
+                email: document.getElementsByName("email")[0].value,
+                subject: document.getElementsByName("number")[0].value,
+                subject: document.getElementsByName("address")[0].value,
+                subject: document.getElementsByName("name")[0].value,
+                message: document.getElementsByName("message")[0].value
+            };
+
+            // Send the email using EmailJS
+            emailjs.send("service_eecr4y4", "template_kc9ddc7", formData)
+                .then(function (response) {
+                    console.log("Email sent successfully:", response);
+                }, function (error) {
+                    console.error("Email could not be sent:", error);
+                });
+        });
+    </script>
 
     <script src="./mixitup.min.js"></script>
     <script src="/portfolio.js"></script>
